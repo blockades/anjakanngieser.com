@@ -32,7 +32,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 c::set('panel.stylesheet', '/assets/css/panel.css');
 c::set('markdown.extra', 'true');
 c::set('thumbs.driver', 'im');
-c::set('panel.install', 'true');
+c::set('panel.install', 'false');
 
 kirby()->hook('panel.page.update', function($page) {
   if($page->parent()->slug() == 'artists') {
