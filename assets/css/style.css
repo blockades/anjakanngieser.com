@@ -19,7 +19,7 @@ p a, li a {
 a {
   color: black; }
   a:hover {
-    opacity: 0.25; }
+    color: #2CFC0E; }
 
 html {
   font-size: 14px; }
