@@ -1,0 +1,10 @@
+.DS_Store
+/site/accounts
+/assets/avatars
+/assets/css
+/assets/js
+/thumbs/*
+*.zip
+
+node_modules
+.sass-cache

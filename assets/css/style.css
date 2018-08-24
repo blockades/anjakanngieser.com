@@ -1,0 +1,244 @@
+button {
+  background: transparent;
+  border: 1px solid;
+  font: inherit;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 2rem 0.75rem; }
+  button:hover {
+    color: blue;
+    cursor: pointer; }
+
+p a, li a {
+  line-height: 1;
+  opacity: 1;
+  border-bottom: 1px solid; }
+  p a:hover, li a:hover {
+    opacity: 0.25; }
+
+a {
+  color: black; }
+  a:hover {
+    opacity: 0.25; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  -webkit-overflow-scrolling: touch; }
+
+main h1 {
+  font-weight: bold; }
+
+main h2 {
+  padding-bottom: 1.8rem; }
+
+p + p {
+  padding-top: 1.8rem; }
+
+sup {
+  color: black;
+  font-size: 0.8rem;
+  padding-left: 0.25rem; }
+
+blockquote {
+  margin-left: 5rem;
+  padding: 0 0 1.8rem 0; }
+
+figcaption {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 2rem; }
+
+i, em {
+  font-style: italic; }
+
+.center {
+  text-align: center;
+  margin-bottom: 3rem; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+body.no-transitions * {
+  transition: none !important; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1480px;
+  padding: 3.6rem; }
+  header h1 {
+    flex: 2; }
+  header h2 {
+    flex: 3; }
+  header span {
+    flex: 1; }
+
+main {
+  width: 100%;
+  max-width: 1480px; }
+  main[data-template="item"] .table div span.title {
+    text-indent: 0 !important;
+    margin-left: 0 !important; }
+  main[data-template="item"] .text-field_details p {
+    max-width: 80% !important; }
+  main[data-template="item"] figure {
+    padding-bottom: 1.8rem; }
+  main[data-template="bio-cv"] {
+    display: flex;
+    flex-direction: column;
+    padding: 3.6rem; }
+    main[data-template="bio-cv"] section {
+      display: flex;
+      flex-direction: row; }
+      main[data-template="bio-cv"] section aside {
+        flex: 2;
+        flex-offset: 1; }
+      main[data-template="bio-cv"] section .biography-details,
+      main[data-template="bio-cv"] section .cv-details {
+        flex: 4; }
+        main[data-template="bio-cv"] section .biography-details .inner,
+        main[data-template="bio-cv"] section .cv-details .inner {
+          padding-right: calc(100% / 4 + 2.4rem); }
+
+.table-header {
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  padding: 3.6rem;
+  padding-bottom: 1.2rem;
+  width: 100%; }
+  .table-header span {
+    flex: 1;
+    font-size: 1.2rem; }
+    .table-header span:nth-of-type(2) {
+      flex: 3; }
+    .table-header span:nth-of-type(3) {
+      padding-left: 1.5rem; }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .table .publisher {
+    padding-left: 1.5rem; }
+  .table a, .table div {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3.6rem 0; }
+    .table a span, .table div span {
+      flex: 1; }
+      .table a span.title, .table div span.title {
+        text-indent: -2.5rem;
+        margin-left: 2.5rem; }
+      .table a span[data-category="EP"], .table a span[data-category="LA"], .table div span[data-category="EP"], .table div span[data-category="LA"] {
+        position: relative; }
+        .table a span[data-category="EP"]:before, .table a span[data-category="LA"]:before, .table div span[data-category="EP"]:before, .table div span[data-category="LA"]:before {
+          content: '\25CF';
+          font-size: 2.7rem;
+          position: absolute;
+          top: -12px;
+          left: -27px; }
+      .table a span[data-category="R"], .table a span[data-category="S"], .table div span[data-category="R"], .table div span[data-category="S"] {
+        position: relative; }
+        .table a span[data-category="R"]:before, .table a span[data-category="S"]:before, .table div span[data-category="R"]:before, .table div span[data-category="S"]:before {
+          content: '\25B4';
+          font-size: 3.6rem;
+          position: absolute;
+          top: -20px;
+          left: -30px; }
+      .table a span:nth-of-type(2), .table div span:nth-of-type(2) {
+        flex: 3; }
+
+.cv .inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.6rem; }
+  .cv .inner .item-wrap {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.8rem; }
+    .cv .inner .item-wrap h2 {
+      flex: 2;
+      text-transform: uppercase; }
+    .cv .inner .item-wrap .item-wrap_entries {
+      flex: 4; }
+      .cv .inner .item-wrap .item-wrap_entries dl {
+        max-width: 920px;
+        position: relative;
+        padding-right: calc(100% / 4 + 2.4rem); }
+        .cv .inner .item-wrap .item-wrap_entries dl dt {
+          position: absolute; }
+        .cv .inner .item-wrap .item-wrap_entries dl dd {
+          width: 100%;
+          padding-left: 15%;
+          text-indent: -2.5rem;
+          margin-left: 2.5rem; }
+
+.text-field {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 3.6rem;
+  position: relative; }
+  .text-field .footnotes {
+    position: absolute;
+    left: 67.5%;
+    top: 30%; }
+    .text-field .footnotes:before {
+      border-top: 1px solid;
+      content: 'Notes to the Text';
+      display: block;
+      font-size: 1.2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 1.8rem;
+      margin-left: -1rem; }
+    .text-field .footnotes hr {
+      display: none; }
+    .text-field .footnotes ol {
+      font: inherit;
+      font-size: 1.2rem;
+      max-width: 75%; }
+  .text-field_spare {
+    flex: 1; }
+  .text-field_column {
+    flex: 3;
+    padding-right: 2.4rem; }
+    .text-field_column_bios {
+      padding-top: 3.6rem; }
+      .text-field_column_bios ul {
+        list-style: none; }
+        .text-field_column_bios ul li {
+          font-size: 1.2rem;
+          padding-bottom: 1.8rem; }
+  .text-field_details {
+    flex: 2;
+    font-size: 1.2rem; }
+    .text-field_details p {
+      max-width: 80%; }
+  .text-field p {
+    padding: 0; }
+    .text-field p + p {
+      padding: 0;
+      text-indent: 5rem; }
+
+img.unloaded {
+  opacity: 0; }
+
+img.loaded {
+  opacity: 1; }
